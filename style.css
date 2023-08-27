@@ -1,0 +1,132 @@
+/* Apply styles for the whole page */
+body {
+    width: 1920px;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* Prevent scrolling */
+}
+
+/* Style for the Supermap Logo */
+.logo {
+    width: 111px;
+    /* Adjust the width as needed */
+    height: 33px;
+}
+
+/* Style for the Map Layer Management title */
+.title {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 19.6px;
+    /* Adjust the font size as needed */
+    margin-bottom: 10px;
+    /* Optional: Add spacing below the title */
+    color: #333;
+    /* Optional: Change text color */
+}
+
+/* Apply styles to the "Technical Demo Test" text within the header */
+.header-text {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 21.6px;
+    font-weight: 500;
+    color: #333;
+    width: 216px;
+    /* Set the width to 216px */
+    height: 100px;
+    /* Set the height to 27px */
+    position: relative;
+    /* Use absolute positioning to set top and left */
+    top: 27px;
+    /* Set the top position to 36px */
+    left: 188px;
+    /* Set the left position to 188px */
+}
+
+
+/* Divider styles */
+.divider {
+    border-left: 1px solid #000000;
+    height: 100%;
+}
+
+/* Apply styles to the logo within the header */
+header img {
+    width: 111px;
+    /* Set the width to 111px */
+    height: 33px;
+    /* Set the height to 33px */
+    position: absolute;
+    /* Use absolute positioning to set top and left */
+    top: 30px;
+    /* Set the top position to 30px */
+    left: 49px;
+    /* Set the left position to 49px */
+}
+
+
+/* Apply styles for the header */
+header {
+    width: 1920px;
+    height: 100px;
+    /* Increased height */
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    /* Change to your preferred text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* Relative positioning for the border line */
+    padding-bottom: 10px;
+    /* Add some padding to push content down */
+}
+
+/* Add a border line below the header */
+header::after {
+    content: "";
+    width: 100%;
+    height: 30px;
+    /* Height of the border line */
+    background-color: #b8b8b8;
+    /* Color of the border line */
+    position: absolute;
+    bottom: 0;
+    /* Position the border at the bottom of the header */
+    left: 0;
+}
+
+/* Apply styles for the sidebar */
+.sidebar {
+    width: 385px;
+    height: 97px;
+    top: 93px;
+    background-color: #ffffff;
+    /* Change to your preferred background color */
+    color: rgb(0, 0, 0);
+    /* Change to your preferred text color */
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* Apply styles for the layer names in the sidebar */
+.layer-names {
+    font-size: 14px;
+}
+
+/* Style for the map container */
+#map {
+    width: calc(100% - 385px);
+    /* Adjust the width based on sidebar width */
+    height: calc(100% - 93px);
+    /* Adjust the height based on header height */
+    position: absolute;
+    top: 93px;
+    left: 385px;
+    /* Adjust based on sidebar width */
+}

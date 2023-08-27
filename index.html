@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Page</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add CSS styles to position the logo at the top-left corner */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px;
+            background-color: #ffffff;
+            /* Optional background color for the header */
+        }
+
+        header img {
+            width: 111px;
+            height: 33px;
+            margin-right: 10px;
+            /* Add some margin to the right of the logo for spacing */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div style="display: flex; align-items: center;">
+            <!-- Supermap Logo -->
+            <img src="images/logo_supermap.png" alt="Supermap Logo" class="logo">
+            <!-- Text "Technical Demo Test" with a class for styling -->
+            <h1 class="header-text">Technical Demo Test</h1>
+        </div>
+    </header>
+
+    <!-- Divider between sidebar and map -->
+    <div class="divider"></div>
+
+    <!-- Sidebar Section -->
+    <div class="sidebar">
+        <div class="title">Map Layer Management</div>
+        <div class="layer-control">
+            <label style="display: block;">
+                <input type="checkbox" id="pointLayerCheckbox" checked>
+                <i class="fas fa-eye"></i> Point layer
+            </label>
+            <label style="display: block;">
+                <input type="checkbox" id="lineLayerCheckbox" checked>
+                <i class="fas fa-eye"></i> Line layer
+            </label>
+            <label style="display: block;">
+                <input type="checkbox" id="polygonLayerCheckbox" checked>
+                <i class="fas fa-eye"></i> Polygon layer
+            </label>
+        </div>
+    </div>
+
+    <!-- Map Section -->
+    <div id="map" style="height: 984px;"></div>
+
+    <script src="java.js"></script>
+
+</body>
+
+</html>
